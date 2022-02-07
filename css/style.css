@@ -1,0 +1,678 @@
+@import 'utilities.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+body{height: 3000px;
+    font-family: 'Poppins',sans-serif;}
+
+html{
+    scroll-behavior: smooth;
+    }
+
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-box-smotthing: antialiase;
+    }
+header
+    {
+        
+        
+   
+  /*
+  border-radius: 0px 0px 0px 50px;
+  padding: 20px;*/
+  
+        background-color: var(--dark);
+       clip-path:polygon(0 0,100% 0, 100% 100%, 70% 87%, 0 95% ); 
+    }
+
+.container
+    {
+        max-width: 1152px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        max-width: 960;
+    }
+}
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1172px;
+    }
+}
+
+header nav .left a
+    {
+        color: var(--pure);
+        text-decoration: none ;
+        margin-right: 2rem;
+        text-transform: uppercase;
+        transition: all .3s ease;
+    }
+header nav .left a:hover
+    {
+        color: var(--primary);
+    }
+header nav
+    {
+        padding: 2rem 0;
+    }
+header nav.branding
+    {
+        margin-right: 10rem ;
+        margin-left: 2rem;
+    }
+ 
+    
+.hero
+    {
+        padding:3rem 0 ;
+    }
+.hero.left img
+    {
+        width: 100px;
+    } 
+.hero .right
+    {
+        color: var(--pure);
+    }
+.hero .right h6
+    {
+        font-size: 1.6rem;
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+    }
+.hero .right h1
+    {
+        font-size: 4rem;
+        font-weight: 100;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+.hero .right h1 span
+    {
+        color: var(--primary);
+    }
+.hero .right p
+    {
+        line-height: 1.9;
+        margin-bottom: 2rem;
+    }
+.hero .right
+    {
+        margin-top: -7rem;
+    }
+section
+    {
+        padding: 6rem 0;
+    }
+    
+section.about .about-me-img
+    {
+        height: 450px;
+    }
+section.about h1
+    {
+        margin: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+section.about h1 span
+    {
+        color: var(--primary);
+    }
+section.about h3
+    {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+section.about p
+    {
+        font-family: 'Lato', sans-serif;
+        color: var(--ternary);
+        line-height: 1.8;
+        margin-bottom: 2rem;
+    }
+section.about .social
+    {
+        display: flex;
+    }
+section.about .social a
+    {
+        background:#ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+       border-radius: 50%; 
+        margin-right: 0.9rem;
+        transition: all .2s ease-in-out;
+    }
+ 
+section.about .social a img
+    {
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+    }
+
+section.about .social a:hover
+    {
+        transform: scale(1.3);
+    }
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    
+}
+.section-heading span{
+    color:var(--primary);
+}
+section.Courses{
+    background: var(--light);
+
+}
+
+section.Courses .new{
+    margin-bottom: 8rem;
+}
+section.Courses .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+section.Courses .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+section.Courses .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.Courses .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.Courses .card-wrapper .card p{
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.Courses .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section.Courses .card-wrapper .card:hover h2,section.Courses .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+section.Skills{
+    background: var(--pure);
+}
+section.Skills .card-wrapper .card img{
+    align-items: center;  
+    transition: all 0.3s ease;
+}
+section.Skills .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+section.Skills .card-wrapper .card{
+    background:var(--light);
+    padding: 2rem 0rem;
+     
+    padding-top: 3rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+section.Skills h1{
+    padding: 1rem;
+}
+section.Skills .card-wrapper .card h2{
+    font-family: 'lato', sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.Skills .card :hover
+    {
+        transform: scale(1.3);
+    }
+
+
+section.internship .about-me-img{
+      
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+
+
+
+section
+    {
+        padding: 6rem 0;
+    }
+    
+    section.internship{
+        background: var(--light);
+    }
+ 
+section.internship h1
+    {
+        margin: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+section.internship h1 span
+    {
+        color: var(--primary);
+    }
+section.internship h3
+    {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+section.internship p
+    {
+        font-family: 'Lato', sans-serif;
+        color:var(--dark);
+        line-height: 1.8;
+        margin-bottom: 2rem;
+    }
+    section.internship .card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+         
+         
+    }
+
+
+
+
+section.freelancer
+    {
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/camera.png);
+        color: var(--pure);
+        /*clip-path: polygon(0 0, 100% 0, 100% 100%,77% 80%, 0 100% );
+        */
+        padding-bottom: 7rem;
+         
+
+    }
+
+section.freelancer h1
+    {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+section.freelancer p
+    {
+        margin-bottom: 2rem;
+        font-family: 'Lato', sans-serif;
+    }
+section.contact .card-wrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 3rem;
+    }
+section.contact .card-wrapper .card
+    {
+        text-align: center;
+    }
+section.contact .card-wrapper .card img
+    {
+        margin-bottom: 3rem;
+
+    }
+section.contact .card-wrapper .card h1
+    {
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+section.contact .card-wrapper .card h6
+    {
+        font-size: 1rem;
+        color: var(--ternary);
+        font-weight: 400;
+        margin-bottom: 4rem;
+    }
+section.contact .input-wrap
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+section.contact .input-wrap-2
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    section.contact .input-wrap-2 input
+    {
+        
+        margin-bottom: 2rem;
+        border: 1px solid var(--light);
+        font-size: 0.9rem;
+    }
+    section.contact input
+    {
+       
+        padding: 0.5rem;
+        border: 1px solid var(--light);
+        font-size: 0.9rem;
+    }
+    section.contact .input-wrap-2 textarea
+    {
+         font-family: 'Lato', sans-serif;
+        padding: .5rem;
+        border: 1px solid var(--light);
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+section.contact h1
+    {
+        margin: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+section.contact h1 span
+    {
+        color: var(--primary);
+    }
+
+section.contact .btn-wrapper{
+    text-align: center;
+}
+ 
+section.contact .container{
+    text-align: center;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+footer .footer-logo{
+    margin-bottom: 2rem;
+    width: 150px;
+}
+
+footer .footer-socials a{
+        margin-right: 1rem;
+ 
+}
+
+footer .copyright{
+    color: var(--ternary);
+}
+
+footer .footer-socials{
+    margin-bottom: 1rem;
+    margin-right: -1rem;
+
+}
+
+footer .footer-socials a img{
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    
+}
+
+footer .footer-socials a :hover{
+    transform: scale(1.3);
+}
+
+.site-main-wrapper {
+    position: relative;
+}
+.hamberger{
+   position:absolute;
+   top:40px;
+   left: 40px;
+    background: none;
+    border: none;
+   z-index: 11;
+   outline: none;
+   cursor: pointer;
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 45%;
+    height: 67%;
+    padding: 2rem;
+    padding-top: 3rem;
+    line-height: 5rem;
+    padding-left: 5rem;
+    transform: translateX(-150%);
+    transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 3%;
+    left: 87%;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type:none;
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media (min-width:1024px){
+    body #hamberger{
+         display: none;
+     }
+     
+ }
+
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+
+.hero .left img{
+    width: 260px;
+}
+.hero .right h1{
+    font-size: 3rem;
+}
+.hero{
+    padding-top: 8rem;
+}
+header{
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 27% 93%, 0 100% ) ;
+}
+
+section.about .about-me-img{
+    height: 400px;
+}
+
+section.Courses .card-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.Skills .section-heading{
+    padding: 0;
+    
+}
+ 
+
+section.internship {
+    flex-direction: column;
+}
+
+section.internship .about-me-img{
+    margin-left: 3.5rem;
+}
+}
+
+@media (max-width:576px){
+    .hero{
+        flex-direction: column;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+        height: 650px;
+    }
+    .hero .right{
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        
+    }
+
+    .hero .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 13rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+
+    }
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+        
+    }
+    .about .right .social{
+        justify-content: center;
+    }
+    section{
+        padding: 2rem;
+    }
+    section.Courses .new{
+        margin-bottom: 6rem;
+    }
+    section.Courses .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-heading {
+        line-height: 1.4;
+    }
+    section.Skills .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+     section.contact .card-wrapper{
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.contact .card-wrapper .card img
+    {
+        margin-bottom: 1rem;
+
+    }
+    section.contact .card-wrapper .card h6
+    {
+        
+        margin-bottom: none;
+    }
+    section.freelancer {
+        padding-bottom: 3rem;
+    }
+    section.contact .card-wrapper{
+        grid-gap: 0;
+    }
+    section.internship .card-wrapper .about-me-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-nav{
+        
+        width: 60%;
+        height: 55%;
+        line-height: 3rem;
+         
+    }
+    .mobile-nav ul li a{
+         
+       
+        font-size: 1.3rem;
+    }
+    .times img{
+        width: 20px;
+    }
+    
+
+}
+
+
